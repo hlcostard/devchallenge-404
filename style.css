@@ -1,0 +1,154 @@
+/* ********* */
+/* CSS RESET */
+/* ********* */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ********* */
+/* STYLES    */
+/* ********* */
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #4f4f4f;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 60rem) {
+  body {
+    margin-top: 3rem;
+  }
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 60rem) {
+  header {
+    margin-bottom: 10rem;
+  }
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875;
+  color: #bdbdbd;
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 60rem) {
+  footer {
+    margin-top: 12rem;
+  }
+}
+
+footer > a {
+  font-weight: 700;
+  color: #bdbdbd;
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333333;
+}
+
+p {
+  max-width: 30ch;
+}
+
+button {
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1.5rem 2.75rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/* ********* */
+/* UTILITY   */
+/* ********* */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 70rem;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 3rem);
+}
+
+@media (min-width: 60rem) {
+  .grid-2-cols {
+    grid-template-columns: 50% 50%;
+  }
+}
